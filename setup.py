@@ -13,6 +13,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'Flask',
+        'flask_url_map_serializer',
         'python-dotenv'
     ],
 )
