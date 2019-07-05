@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -11,7 +14,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,4 +34,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-main {
+  height: 50vh;
+}
+
+.App-main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1.5vmin);
+  color: white;
+}
+
+.App-main > section:nth-child(1) {
+  height: 20vh;
+  background-color: #0b66a6;
+}
+
+.App-main > section:nth-child(2) {
+  box-sizing: border-box;
+  height: 30vh;
+  background-color: #111d46;
+}
+
+input, button {
+  background-color: #282c34;
+  border: 1px solid #61dafb;
+  color: #61dafb;
+  font-size: calc(10px + 1vmin);
+  padding: 5px;
+}
+
+input:disabled, button:disabled {
+  border-color: #aaa;
+  color: #aaa;
 }
