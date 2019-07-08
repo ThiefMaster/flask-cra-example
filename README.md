@@ -10,14 +10,14 @@ then you may want to configure webpack yourself instead.
 
 - Create and activate a virtualenv
 - `pip install -e .`
-- Inside the `client/` directory: `npm install`
+- Inside the `flask_cra_example/client/` directory: `npm install`
 
 ## Running
 
 ### Dev server
 
 - Use `flask run` as usual to start the dev server.
-- Inside the `client/` directory, use `npm start` to run the CRA dev server.
+- Inside the `flask_cra_example/client/` directory, use `npm start` to run the CRA dev server.
 
 Note: The frontend will proxy all `/api/` requests to the Flask app, which it expects
 on `http://127.0.0.1:5000`.
@@ -45,8 +45,8 @@ For a real production deployment, you use `npm run build` as well, but instead o
 the Flask dev server you use a real web server (like nginx+uwsgi).
 
 Also, there's no reason to have your frontend served through Flask - so the web server should
-be configured to serve the files from the `client/build` directory, and only forward `/api/`
-requests to the Flask app.
+be configured to serve the files from the `flask_cra_example/client/build` directory,
+and only forward `/api/` requests to the Flask app.
 
 ## Your own app
 
